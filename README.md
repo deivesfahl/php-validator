@@ -113,3 +113,51 @@ $validator->setRules([
     'name' => 'max:100'
 ]);
 ```
+
+# Métodos
+
+## validate
+
+Executa a validação com base nos dados e nas regras informadas.
+
+```php
+$validator->validate($datasets, $rules);
+```
+
+## fails
+
+Verifica se a validação retornou erros.
+
+```php
+$validator->fails();
+```
+
+## errors
+
+Resgata todos os erros.
+
+```php
+$validator->errors();
+```
+
+Resgata erros de um campo específico.
+
+```php
+$validator->errors('name');
+```
+
+## first
+
+Resgata apenas o primeiro erro de um campo.
+
+```php
+$validator->first('name');
+```
+
+## firstOfAll
+
+Resgata apenas o primeiro erro dos campos.
+
+```php
+$validator->firstOfAll('name');
+```
