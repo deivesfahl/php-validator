@@ -52,7 +52,7 @@ if ($validator->fails()) {
 }
 ```
 
-## Atributos
+## Personalizar Atributos
 
 ```php
 $validator->setAttribute('name', 'Name');
@@ -64,7 +64,7 @@ $validator->setAttributes([
 ]);
 ```
 
-## Conjunto de dados
+## Personalizar Conjuntos de Dados
 
 ```php
 $validator->setDataset('name', $name);
@@ -76,7 +76,7 @@ $validator->setDatasets([
 ]);
 ```
 
-## Mensagens
+## Personalizar Mensagens
 
 ### Padrão
 
@@ -102,7 +102,7 @@ $validator->setMessages([
 ]);
 ```
 
-## Regras
+## Personalizar Regras
 
 ```php
 $validator->setRule('name', 'max:100');
