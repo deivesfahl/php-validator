@@ -121,7 +121,7 @@ $validator->setRules([
 Executa a validação com base nos dados e nas regras informadas.
 
 ```php
-$validator->validate($datasets, $rules);
+$validator->validate($data, $rules);
 ```
 
 ## fails
@@ -159,5 +159,5 @@ $validator->first('name');
 Resgata apenas o primeiro erro dos campos.
 
 ```php
-$validator->firstOfAll('name');
+$validator->firstOfAll();
 ```

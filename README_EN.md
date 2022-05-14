@@ -121,7 +121,7 @@ $validator->setRules([
 Run the validation based on the data and rules entered.
 
 ```php
-$validator->validate($datasets, $rules);
+$validator->validate($data, $rules);
 ```
 
 ## fails
@@ -159,5 +159,5 @@ $validator->first('name');
 Get only first error of the fields.
 
 ```php
-$validator->firstOfAll('name');
+$validator->firstOfAll();
 ```
