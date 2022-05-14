@@ -1,3 +1,5 @@
+[English](README_EN.md)
+
 # Validator
 
 Biblioteca para validação de dados.

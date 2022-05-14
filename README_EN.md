@@ -1,3 +1,5 @@
+[Português](README.md)
+
 # Validator
 
 Library for data validation.
