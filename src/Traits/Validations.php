@@ -26,7 +26,7 @@ trait Validations
 	/**
 	 * Validate if the field has a value between min and max.
 	 *
-	 * @access public
+	 * @access private
 	 *
 	 * @param string $field
 	 * @param mixed  $parameters
@@ -35,7 +35,7 @@ trait Validations
 	 *
 	 * @return void
 	 */
-	public function between(string $field, ...$parameters): void
+	private function between(string $field, ...$parameters): void
 	{
 		$fieldValue = $this->fieldValue($field);
 
@@ -75,13 +75,13 @@ trait Validations
 	/**
 	 * Validate if the field has a valid email.
 	 *
-	 * @access public
+	 * @access private
 	 *
 	 * @param string $field
 	 *
 	 * @return void
 	 */
-	public function email(string $field): void
+	private function email(string $field): void
 	{
 		$fieldValue = $this->fieldValue($field);
 
@@ -102,7 +102,7 @@ trait Validations
 	/**
 	 * Validate if the field has a value with the max number of characters.
 	 *
-	 * @access public
+	 * @access private
 	 *
 	 * @param string $field
 	 * @param mixed  $parameters
@@ -111,7 +111,7 @@ trait Validations
 	 *
 	 * @return void
 	 */
-	public function max(string $field, ...$parameters): void
+	private function max(string $field, ...$parameters): void
 	{
 		$fieldValue = $this->fieldValue($field);
 
@@ -142,7 +142,7 @@ trait Validations
 	/**
 	 * Validate if the field has a value with the min number of characters.
 	 *
-	 * @access public
+	 * @access private
 	 *
 	 * @param string $field
 	 * @param mixed  $parameters
@@ -151,7 +151,7 @@ trait Validations
 	 *
 	 * @return void
 	 */
-	public function min(string $field, ...$parameters): void
+	private function min(string $field, ...$parameters): void
 	{
 		$fieldValue = $this->fieldValue($field);
 
@@ -182,13 +182,13 @@ trait Validations
 	/**
 	 * Validate if the field has a value.
 	 *
-	 * @access public
+	 * @access private
 	 *
 	 * @param string $field
 	 *
 	 * @return void
 	 */
-	public function required(string $field): void
+	private function required(string $field): void
 	{
 		$requiredRule = new Required();
 		$validation   = $requiredRule->handle($field, $this->fieldValue($field));
