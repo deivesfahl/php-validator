@@ -135,7 +135,7 @@ final class Validator
 			return;
 		}
 
-		throw new InvalidArgumentException("O método de validação \"{$validationMethod}\" não foi encontrado");
+		throw new InvalidArgumentException("Validation method \"{$validationMethod}\" not found");
 	}
 
 	/**
