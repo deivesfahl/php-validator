@@ -81,24 +81,24 @@ $validator->setDatasets([
 ### Standard
 
 ```php
-$validator->setDefaultMessage('required', 'O campo :attribute é obrigatório');
+$validator->setDefaultMessage('required', 'The :attribute field is mandatory');
 
 // Ou
 
 $validator->setDefaultMessages([
-    'required' => 'O campo :attribute é obrigatório'
+    'required' => 'The :attribute field is mandatory'
 ]);
 ```
 
 ### By Field/Rule
 
 ```php
-$validator->setMessage('name.required', 'O campo :attribute é obrigatório');
+$validator->setMessage('name.required', 'The :attribute field is mandatory');
 
 // Ou
 
 $validator->setMessages([
-    'name.required' => 'O campo :attribute é obrigatório'
+    'name.required' => 'The :attribute field is mandatory'
 ]);
 ```
 
