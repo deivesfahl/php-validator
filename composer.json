@@ -12,9 +12,9 @@
         "php": "^8.0"
     },
     "require-dev": {
-        "friendsofphp/php-cs-fixer": "v3.8.0",
+        "friendsofphp/php-cs-fixer": "v3.9.5",
         "pestphp/pest": "v1.21.3",
-        "symfony/var-dumper": "v5.4.8"
+        "symfony/var-dumper": "v6.0.11"
     },
     "autoload": {
         "psr-4": {
